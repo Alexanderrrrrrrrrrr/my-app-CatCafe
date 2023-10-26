@@ -7,7 +7,7 @@ function MainPage({ stars }) {
   return (
     <>
       <About level={TitleLevel.H1}  />
-      <StarsList stars={stars} />
+      <StarsList stars={stars} level={TitleLevel.H2} />
     </>
   );
 }

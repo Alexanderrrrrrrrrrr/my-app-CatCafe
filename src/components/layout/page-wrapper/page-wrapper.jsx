@@ -1,15 +1,16 @@
 import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
-import MainPage from "../../pages/main-page/main-page";
 import { Main } from "./style";
+import { Outlet } from "react-router";
 
-function PageWrapper({ ...prop }) {
+
+function PageWrapper() {
   return (
     <>
       <Header />
       <Main >
-        <MainPage { ...prop } />
+        <Outlet />
       </Main>
       <Footer />
     </>

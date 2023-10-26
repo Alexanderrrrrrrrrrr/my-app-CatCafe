@@ -3,11 +3,11 @@ import Logo from "../../ui/logo/logo";
 import Nav from "../nav/nav";
 import {StyledSection} from "./style";
 
-function Header({ pageUrl }) {
+function Header() {
   return (
-    <StyledSection className="header">
+    <StyledSection as="header">
       <Logo />
-      <Nav pageUrl={pageUrl} />
+      <Nav />
     </StyledSection>
   );
 }
